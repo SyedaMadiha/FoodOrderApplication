@@ -145,7 +145,7 @@
             android:layout_marginTop="20dp"
             app:backgroundTint="@null"
             android:background="@drawable/btn_background"
-            android:backgroundTint="#DAC642"
+            android:backgroundTint="#E4D25A"
             android:text="ORDER NOW" />
 
     </LinearLayout>
