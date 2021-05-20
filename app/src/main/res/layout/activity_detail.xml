@@ -24,7 +24,7 @@
                 app:srcCompat="@drawable/burger" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/nameBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/allerta"
@@ -86,7 +86,7 @@
             android:text="Meaty potobello mushrroms makes for the perfect vegetarian burger" />
 
         <EditText
-            android:id="@+id/nameBox"
+            android:id="@+id/nameBoxx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -129,7 +129,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/priceLbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="15.00"
@@ -139,13 +139,13 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/insertBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:backgroundTint="@null"
             android:background="@drawable/btn_background"
-            android:backgroundTint="#E4D25A"
+            android:backgroundTint="#E8CE22"
             android:text="ORDER NOW" />
 
     </LinearLayout>
