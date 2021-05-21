@@ -24,7 +24,7 @@
                 app:srcCompat="@drawable/burger" />
 
             <TextView
-                android:id="@+id/nameBox"
+                android:id="@+id/nameLbl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/allerta"
@@ -86,7 +86,7 @@
             android:text="Meaty potobello mushrroms makes for the perfect vegetarian burger" />
 
         <EditText
-            android:id="@+id/nameBoxx"
+            android:id="@+id/nameBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"

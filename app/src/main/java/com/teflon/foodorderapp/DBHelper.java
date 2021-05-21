@@ -1,5 +1,6 @@
 package com.teflon.foodorderapp;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -34,5 +35,23 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP table if exists orders");
         onCreate(db);
+    }
+
+    public boolean insertOrder(String name, String phone, int price, int image, String desc, String foodName, int quantity) {
+        SQLiteDatabase database = getReadableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("name", name);
+        values.put("phone", phone);
+        values.put("price", price);
+        values.put("image", image);
+        values.put("description", desc);
+        values.put("foodname", foodName);
+        values.put("quantity", quantity);
+        long id = database.insert("orders", null, values);
+        if (id <= 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
